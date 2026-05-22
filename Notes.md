@@ -24,8 +24,8 @@
   - hdel    -   delete object
   - hget    -   single field
   - hexist  -   filed available or not
-  - lpush   -   push from left
-  - rpop    -   pop from right
+  - lpush   -   push from left (in queue)
+  - rpop    -   pop from right (in queue)
   
 
 
