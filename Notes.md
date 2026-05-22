@@ -15,19 +15,26 @@
   - Shared Counter 
 
 ## redis commands: 
-  - TTL (time to live) - gives the time in seconds for which a key-value pair will be stored in redis
-  - set - can set key value pair in redis, store single variable, can't be updated
-  - get - get the key
-  - del - delete the key
-  - hset - store object, can be updated (in hash)
-  - hgetall - get entire object
-  - hdel - delete object
-  - hget - single field
-  - hexist - filed available or not
+  - TTL     -   gives the time in seconds for which a key-value pair will be stored in redis (time to live)
+  - set     -   can set key value pair in redis, store single variable, can't be updated
+  - get     -   get the key
+  - del     -   delete the key
+  - hset    -   store object, can be updated (in hash)
+  - hgetall -   get entire object
+  - hdel    -   delete object
+  - hget    -   single field
+  - hexist  -   filed available or not
+  - lpush   -   push from left
+  - rpop    -   pop from right
+  
 
 
 # workflow ( -> = request )
 users -> backend -> redis( <- cache hit / cache miss -> ) -> DataBase
+
+
+## Lists(job) - Queue like
+  - no retry  |  no parallel workers   |  job loss
 
 
 
