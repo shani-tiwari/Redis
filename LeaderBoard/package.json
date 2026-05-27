@@ -20,7 +20,6 @@
   "type": "module",
   "dependencies": {
     "express": "^5.2.1",
-    "ioredis": "^5.10.1",
-    "bullmq": "^5.18.0"
+    "ioredis": "^5.10.1"
   }
 }
